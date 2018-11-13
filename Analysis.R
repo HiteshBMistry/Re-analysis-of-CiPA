@@ -31,5 +31,5 @@ performance(p2,"auc")# 0.98
 
 p3<-prediction(test$qNet, test$CiPA>0)
 p4<-prediction(test$qNet, test$CiPA>1)
-performance(p3,"auc")# 0.88
-performance(p4,"auc")# 1.00
+performance(p3,"auc")# 0.88 - was 0.90 in the paper
+performance(p4,"auc")# 1.00 - was 0.99 in the paper
