@@ -20,8 +20,8 @@ summary(lm(qNet~Bnet,data=dat))
 
 require(rms)
 test<-dat[13:28,]
-lrm(CiPA~Bnet,data=test)
-lrm(CiPA~qNet,data=test)
+lrm(CiPA~Bnet,data=test)# 24.16
+lrm(CiPA~qNet,data=test)# 18.19
 
 require(ROCR)
 p1<-prediction(test$Bnet, test$CiPA>0)
